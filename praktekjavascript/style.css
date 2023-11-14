@@ -1,0 +1,64 @@
+body{
+    background-color: azure;
+    padding: 0;
+    margin: 0;
+}
+
+.utama{
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+.gambar{
+    position: absolute;
+    margin-top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.gambar img {
+    max-height: 250px;
+    transition: max-height 0.3s ease;
+}
+
+.gambar img:hover {
+    max-height: 300px;
+}
+
+.gambar img.scale {
+    transform: scale(1.2);
+}
+
+
+.bagbutton{
+    position: absolute;
+    margin-top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bagbutton button {
+    /* Tambahkan gaya khusus di sini */
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.5s ease; /* Tambahkan transisi untuk font-size */
+}
+
+.bagbutton button:hover {
+    background-color: #ff0000;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.bagbutton button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
